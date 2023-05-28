@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'ttlake';
+    src: local('ttlake'),
+    url('./font/ttlake/TTlakes-Bold.ttf') format('ttf'),
+    url('./font/ttlake/TTLakes-Bold.woff') format('woff'),
+    url('./font/ttlake/TTlakes-Bold.eot') format('eot');
+}
+@font-face {
+    font-family: 'ttlake_light';
+    src: local('ttlake_light'),
+    url('./font/ttlake/TTLakes-Regular.ttf') format('ttf'),
+    url('./font/ttlake/TTLakes-Regular.woff') format('woff'),
+    url('./font/ttlake/TTLakes-Regular.eot') format('eot');
+}
+.brands-list__button-next-hide{
+    display: none;
+    margin-left: 39px;
+}
+header h3{
+    margin-left: 32px;
+    font-family: ttlake_light;
+    color: gray;
+}
+
+.brands-list__element{
+    height: 72px;
+    background-color: white;
+    border-radius: 6px;
+    justify-content: space-between;
+    border: 1px solid #EAEAEA;
+}
+.swiper-pagination{
+    padding-top: 16px;
+}
+.brands-list__navigation::-webkit-scrollbar {
+    width: 0.1em;
+    background-color: transparent;
+}
+.brands-list__element{
+    display: flex;
+    align-items: center;
+}
+.brands-list__element img{
+    margin-left: 16px;
+}
+.brands-list__element div{
+    width: 40px;
+    height: 40px;
+    background-image: url("img/brands-more.svg");
+    margin-right: 16px;
+}
+button  {
+    background-color: transparent;
+    border: none;
+}
+.brands-list__img-next{
+    background-image: url("img/next-button.svg");
+    height: 10.29px;
+    width: 7.41px;
+    align-self: center;
+    margin-right: 16px;
+}
+.brands-list__button-next{
+    display: flex;
+    margin-left: 39px;
+}
+.swiper{
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .brands-list__navigation{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+        margin-right: 24px;
+    }
+    .brands-list__element{
+        width: 240px;
+    }
+    main {
+        margin-right: 0;
+    }
+    .brands-list__pc {
+        display: none;
+    }
+    .brands-list__button-next{
+        font-family: ttlake;
+        font-size: 16px;
+
+    }
+    .brands-list__button-next-hide{
+        font-family: ttlake;
+        font-size: 16px;
+
+    }
+}
+@media (max-width: 767px) {
+    .brands-list__element{
+        width: 90%;
+    }
+    .brands-list__button-next{
+        display: none;
+    }
+    .brands-list__button-next-hide{
+        display: none;
+    }
+    .brands-list__element{
+        margin-bottom: 16px;
+    }
+    .swiper{
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+}
